@@ -18,51 +18,6 @@ public class LibroServicios {
         Editorial editorial = new Editorial();
         Autor autor = new Autor();
 
-        /*  try {
-            System.out.println("Ingrese el titulo del libro");
-            String titulo = entrada.next();
-
-            System.out.println("Ingrese el autor del libro");
-            String nombreAut = entrada.next();
-
-            System.out.println("Ingrese el año de publicación del libro");
-            Integer anio = entrada.nextInt();
-
-            System.out.println("Ingrese el nombre de la editorial del libro");
-            String nombreEd = entrada.next();
-
-            System.out.println("Ingrese el ISBN del libro");
-            Long isbn = entrada.nextLong();
-
-            System.out.println("Ingrese el total de ejemplares del libro");
-            Integer ejemplares = entrada.nextInt();
-
-            System.out.println("Ingrese los ejemplares prestados");
-            Integer ejemplaresPrestados = entrada.nextInt();
-
-            Integer ejemplaresRestantes = ejemplares - ejemplaresPrestados;
-            
-
-            autor.setNombre(nombreAut);
-            autor.setAlta(true);
-            editorial.setNombre(nombreEd);
-            editorial.setAlta(true);
-            libro.setEditorial(editorial);
-            libro.setTitulo(titulo);
-            libro.setAutor(autor);
-            libro.setAnio(anio);
-            libro.setIsbn(isbn);
-            libro.setEjemplares(ejemplares);
-            libro.setEjemplaresPrestados(ejemplaresPrestados);
-            libro.setEjemplaresRestantes(ejemplaresRestantes);
-            libro.setAlta(true);
-          
-            librodao.Insertar(libro);
-         
-            System.out.println("Se guardo el libro en la base de datos");
-        } catch (Exception e) {
-            throw new Exception("No se pudo crear el libro");
-        }*/
         try {
             System.out.println("Ingrese el isbn");
             Long isbn = entrada.nextLong();
@@ -203,7 +158,7 @@ public class LibroServicios {
         }
 
     }
-    
+
     public void MostrarLibroPorEditorial(String editorial) throws Exception {
 
         try {
@@ -228,5 +183,5 @@ public class LibroServicios {
         }
 
     }
-    
+
 }
